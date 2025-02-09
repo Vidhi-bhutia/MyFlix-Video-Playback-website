@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="category-title">Category</h1>
+    <button class="back-button" onclick="goBack()">Back to Home</button>
+  </div>
+
+  <div class="language-filter">
+    <button onclick="filterLanguage('all')">All</button>
+    <button onclick="filterLanguage('hindi')">Hindi</button>
+    <button onclick="filterLanguage('tamil')">Tamil</button>
+    <button onclick="filterLanguage('english')">English</button>
+    <button onclick="filterLanguage('malayalam')">Malayalam</button>
+    <button onclick="filterLanguage('kannada')">Kannada</button>
+  </div>
+
+  <div class="video-grid">
+    <div class="video-card" data-language="tamil">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_iEVVkRfFdg?si=iZTOg9HYpAcANHkA"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="tamil">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DyDwUZi5bQ4?si=TAwbX4m-cUTgAZIU"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="tamil">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iRc2s_KVRx0?si=Oj3buKUiZydOwMPm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="tamil">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/riLwWRVc9KA?si=V5C4NOeT9vFrmBwi"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="tamil">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7KDARzgvjTM?si=h7vE450w7kivrTbh"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="hindi">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6kAy2KDDe9E?si=OvV_L_QEld9bM7yt"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="hindi">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gptw_56x71g?si=0libiM4Iv2Y5XxeA"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="hindi">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0vdxmoWrTYk?si=oskahZc30ASYOt4S"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="hindi">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mHspBRYFpww?si=qbaHSjzFsFbglBXI"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="hindi">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/K-WvWHTYJVQ?si=WMWEdViW_o149vmo"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="english">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jan5CFWs9ic?si=kpkaGV9_Jf5K7U1d"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="english">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/C08i-XKoa2I?si=4a3UGFzKSo2qsyQV"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="english">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KprGxpMpX2Y?si=akogLOGl-RUi8iTd"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="english">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Xpm7URf-Jb8?si=_bGVfIcCMm3lDO3-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="english">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bc9q__VbYL4?si=-kiSYqCDdX6aMCNa"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="malayalam">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AAaPuJde8UM?si=byjguP_VvkUgdaVD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="malayalam">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UDRglLQXpyU?si=aRcRHcfGdiUyyh3l"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="malayalam">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AAaPuJde8UM?si=byjguP_VvkUgdaVD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="malayalam">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UDRglLQXpyU?si=aRcRHcfGdiUyyh3l"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="malayalam">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AAaPuJde8UM?si=byjguP_VvkUgdaVD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="kannada">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qeErT74GGgk?si=zLqJb0kkAhR5J7sm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="kannada">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EL8fSY4GFUs?si=b5nSWeAe-GL3d99n"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="kannada">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qeErT74GGgk?si=zLqJb0kkAhR5J7sm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="kannada">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EL8fSY4GFUs?si=b5nSWeAe-GL3d99n"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+    <div class="video-card" data-language="kannada">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qeErT74GGgk?si=zLqJb0kkAhR5J7sm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-actions">
+        <button>Play Now</button>
+        <button>Shortlist</button>
+        <button>Watch Later</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = 'index.html';
+    }
+
+    function filterLanguage(language) {
+      const videos = document.querySelectorAll('.video-card');
+      videos.forEach(video => {
+        if (language === 'all' || video.dataset.language === language) {
+          video.style.display = 'block';
+        } else {
+          video.style.display = 'none';
+        }
+      });
+    }
+
+    // Dynamically change the title based on the query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type');
+    const titleMap = {
+      recent: "Most Recent Movies",
+      series: "TV Series",
+      trending: "Trending Videos",
+      watched: "Most Watched Videos"
+    };
+    document.getElementById('category-title').textContent = titleMap[type] || "Category";
+  </script>
+</body>
+
+</html>
